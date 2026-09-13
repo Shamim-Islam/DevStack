@@ -1,14 +1,12 @@
-
-import bannerStack from '../assets/banner-stack.png';
+import bannerStack from "../assets/banner-stack.png";
 
 function Banner() {
   return (
     <section className="bg-white">
       <div className="mx-auto grid container grid-cols-1 items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-20">
-
         {/* Left Content */}
         <div>
-          <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-slate-900 md:text-5xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-7xl">
             Build Your Ideal
             <span className="block bg-linear-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
               Development Stack
@@ -16,9 +14,9 @@ function Banner() {
           </h1>
 
           <p className="mt-6 max-w-xl text-sm leading-6 text-slate-500 md:text-base">
-            Explore frontend, backend, database, and tooling options,
-            compare them side by side, and put together the stack that fits
-            your next project.
+            Explore frontend, backend, database, and tooling options, compare
+            them side by side, and put together the stack that fits your next
+            project.
           </p>
 
           {/* Buttons */}
@@ -45,7 +43,6 @@ function Banner() {
             <img src={bannerStack} alt="Banner Stack" />
           </div>
         </div>
-
       </div>
     </section>
   );
