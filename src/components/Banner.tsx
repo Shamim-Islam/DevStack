@@ -8,7 +8,7 @@ function Banner() {
         <div>
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-7xl">
             Build Your Ideal
-            <span className="block bg-linear-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
               Development Stack
             </span>
           </h1>

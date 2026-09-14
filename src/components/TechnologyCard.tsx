@@ -13,11 +13,6 @@ function TechnologyCard({
   isSelected,
   categorySelected,
 }: TechnologyCardProps) {
-//   const iconKey =
-//     "iconTone" in technology && technology.iconTone
-//       ? technology.iconTone
-//       : technology.icon;
-
   const buttonText = isSelected
     ? "Added ✓"
     : categorySelected
@@ -27,7 +22,7 @@ function TechnologyCard({
   return (
     <div className="flex flex-col rounded-xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
       {/* Top */}
-      <div className="flex items-start justify-between p-3">
+      <div className="flex items-start justify-between py-3">
         <div className="flex items-center justify-center rounded-lg bg-slate-50">
           <img
             src={technology.icon}

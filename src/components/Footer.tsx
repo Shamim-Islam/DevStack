@@ -1,26 +1,19 @@
+import logo from "../assets/logo-text.png";
 function Footer() {
   return (
     <footer className="border-t border-slate-100 bg-white">
       <div className="mx-auto container px-4 py-12">
-
         {/* Footer Main Content */}
         <div className="grid gap-10 md:grid-cols-5">
-
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-md bg-linear-to-r from-purple-500 to-pink-500 text-xs font-bold text-white">
-                DS
-              </div>
-
-              <h2 className="text-base font-bold text-slate-900">
-                Dev <span className="text-pink-500">Stack</span>
-              </h2>
+              <img src={logo} alt="DevStack Logo" className="h-9 " />
             </div>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-slate-500">
-              Curated tools, technologies, and resources for developers
-              building modern software.
+              Curated tools, technologies, and resources for developers building
+              modern software.
             </p>
 
             {/* Social Links */}
@@ -130,7 +123,6 @@ function Footer() {
               </a>
             </div>
           </div>
-
         </div>
 
         {/* Bottom Border */}
@@ -149,7 +141,6 @@ function Footer() {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );
