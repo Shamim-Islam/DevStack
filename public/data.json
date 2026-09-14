@@ -7,7 +7,7 @@
     "level": "Beginner-Friendly",
     "rating": 4.9,
     "badge": "Popular",
-    "icon": "react"
+    "icon": "/icons/react.svg"
   },
   {
     "id": "vue",
@@ -17,7 +17,7 @@
     "level": "Beginner-Friendly",
     "rating": 4.8,
     "badge": "Versatile",
-    "icon": "vue"
+    "icon": "/icons/vue.svg"
   },
   {
     "id": "svelte",
@@ -27,7 +27,7 @@
     "level": "Intermediate",
     "rating": 4.8,
     "badge": "Fast",
-    "icon": "svelte"
+    "icon": "/icons/svelte.svg"
   },
   {
     "id": "nextjs",
@@ -37,7 +37,7 @@
     "level": "Intermediate",
     "rating": 4.9,
     "badge": "",
-    "icon": "nextjs"
+    "icon": "/icons/nextjs.svg"
   },
   {
     "id": "nodejs",
@@ -47,7 +47,7 @@
     "level": "Intermediate",
     "rating": 4.8,
     "badge": "Standard",
-    "icon": "nodejs"
+    "icon": "/icons/nodejs.svg"
   },
   {
     "id": "postgresql",
@@ -57,7 +57,7 @@
     "level": "Intermediate",
     "rating": 4.9,
     "badge": "Top SQL",
-    "icon": "postgresql"
+    "icon": "/icons/postgresql.svg"
   },
   {
     "id": "redis",
@@ -67,7 +67,7 @@
     "level": "Intermediate",
     "rating": 4.8,
     "badge": "Cache",
-    "icon": "redis"
+    "icon": "/icons/redis.svg"
   },
   {
     "id": "javascript",
@@ -77,7 +77,7 @@
     "level": "Beginner-Friendly",
     "rating": 4.9,
     "badge": "Ubiquitous",
-    "icon": "javascript"
+    "icon": "/icons/javascript.svg"
   },
   {
     "id": "typescript",
@@ -87,7 +87,7 @@
     "level": "Intermediate",
     "rating": 4.9,
     "badge": "Essential",
-    "icon": "typescript"
+    "icon": "/icons/typescript.svg"
   },
   {
     "id": "java",
@@ -97,7 +97,7 @@
     "level": "Intermediate",
     "rating": 4.6,
     "badge": "Robust",
-    "icon": "java"
+    "icon": "/icons/java.svg"
   },
   {
     "id": "tailwind",
@@ -107,7 +107,7 @@
     "level": "Beginner-Friendly",
     "rating": 4.9,
     "badge": "Modern",
-    "icon": "tailwind"
+    "icon": "/icons/tailwind.svg"
   },
   {
     "id": "docker",
@@ -117,6 +117,6 @@
     "level": "Intermediate",
     "rating": 4.9,
     "badge": "Containers",
-    "icon": "docker"
+    "icon": "/icons/docker.svg"
   }
 ]

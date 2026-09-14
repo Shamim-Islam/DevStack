@@ -1,21 +1,3 @@
-import type { IconType } from "react-icons";
-
-import {
-  SiReact,
-  SiVuedotjs,
-  SiSvelte,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiRedis,
-  SiJavascript,
-  SiTypescript,
-  SiTailwindcss,
-  SiDocker,
-} from "react-icons/si";
-
-import { FaJava } from "react-icons/fa";
-
 import type { Technology } from "../types/technology";
 
 type TechnologyCardProps = {
@@ -25,37 +7,16 @@ type TechnologyCardProps = {
   categorySelected: boolean;
 };
 
-const iconMap: Record<string, IconType> = {
-  react: SiReact,
-  vue: SiVuedotjs,
-  svelte: SiSvelte,
-  nextjs: SiNextdotjs,
-  nodejs: SiNodedotjs,
-  postgresql: SiPostgresql,
-  redis: SiRedis,
-  javascript: SiJavascript,
-  typescript: SiTypescript,
-  java: FaJava,
-  tailwind: SiTailwindcss,
-  docker: SiDocker,
-};
-
 function TechnologyCard({
   technology,
   onAdd,
   isSelected,
   categorySelected,
 }: TechnologyCardProps) {
-  // Support iconTone if your JSON uses:
-  // icon: "⚛"
-  // iconTone: "react"
-
-  const iconKey =
-    "iconTone" in technology && technology.iconTone
-      ? technology.iconTone
-      : technology.icon;
-
-  const Icon = iconMap[iconKey];
+//   const iconKey =
+//     "iconTone" in technology && technology.iconTone
+//       ? technology.iconTone
+//       : technology.icon;
 
   const buttonText = isSelected
     ? "Added ✓"
@@ -68,13 +29,11 @@ function TechnologyCard({
       {/* Top */}
       <div className="flex items-start justify-between p-3">
         <div className="flex items-center justify-center rounded-lg bg-slate-50">
-          {Icon ? (
-            <Icon className="text-[24px]" />
-          ) : (
-            <span className="text-[24px]">
-              {technology.icon}
-            </span>
-          )}
+          <img
+            src={technology.icon}
+            alt={`${technology.name} logo`}
+            className="h-12 w-12 object-contain"
+          />
         </div>
 
         {technology.badge && (
@@ -101,13 +60,10 @@ function TechnologyCard({
             {technology.category}
           </span>
 
-          <span className="text-slate-400">
-            {technology.level}
-          </span>
+          <span className="text-slate-400">{technology.level}</span>
 
           <span className="font-medium text-slate-600">
-            <span className="text-yellow-400">★</span>{" "}
-            {technology.rating}
+            <span className="text-yellow-400">★</span> {technology.rating}
           </span>
         </div>
 
